@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driver Login - FoodExpress</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="login-container">
+    <h1>Driver Login</h1> <!-- Updated header for the Driver login -->
+    <form id="driver-form" class="login-form">
+      <label for="driver-email">Email:</label>
+      <input type="email" id="driver-email" placeholder="Enter your email" required>
+      
+      <label for="driver-password">Password:</label>
+      <input type="password" id="driver-password" placeholder="Enter your password" required>
+      
+      <button type="button" onclick="loginUser('driver')">Login</button> <!-- Updated button with event listener -->
+      <p id="driver-error" class="error-message"></p> <!-- Error message container -->
+      <div class="signup-option">
+        <p>Don't have an account? <a href="signup.html">Sign up here</a></p> <!-- Added sign-up option -->
+      </div>
+      
+    </form>
+  </div>
+  <script src="login.js"></script> <!-- Linking JS file for functionality -->
+</body>
+</html>

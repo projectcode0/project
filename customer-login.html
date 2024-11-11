@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Login - FoodExpress</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="login-container">
+    <h1>Customer Login</h1> <!-- Updated header for the Customer login -->
+    <form id="customer-form" class="login-form">
+      <label for="customer-email">Email:</label>
+      <input type="email" id="customer-email" placeholder="Enter your email" required>
+      
+      <label for="customer-password">Password:</label>
+      <input type="password" id="customer-password" placeholder="Enter your password" required>
+      
+      <button type="button" onclick="loginUser('customer')">Login</button> <!-- Updated button with event listener -->
+      <p id="customer-error" class="error-message"></p> <!-- Error message container -->
+      
+      <div class="signup-option">
+        <p>Don't have an account? <a href="signup.html">Sign up here</a></p> <!-- Added sign-up option -->
+      </div>
+    </form>
+  </div>
+  <script src="login.js"></script> <!-- Linking JS file for functionality -->
+</body>
+</html>
